@@ -25,6 +25,33 @@ h1, h3 {
     padding: 4px;
 }
 
+table {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.head {
+    color: white;
+    background-color: #008b41;
+}
+
+.table {
+    border-bottom: 3px solid #008b41;
+    font-size: 25px;
+}
+
+tr {
+    height: 50px;
+}
+
+tr:hover {
+    background-color: #ede5e1;
+    color: #008b41;
+}
+
 p {
     text-align: center;
     background-color: white;
