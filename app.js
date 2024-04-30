@@ -1,23 +1,23 @@
 // Math's Tables Assignment
 
-let input = parseInt(prompt("Please enter a digit that print the Table"));
+let inputform = document.getElementById(`form`);
+let input = document.getElementById(`inputNumber`);
 let table = document.getElementById(`tbody`);
 
-document.getElementById(`inp`).innerHTML = input;
+inputform.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let tableOf = input.value;
+  tbody.innerHTML = "";
 
-input.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let tableOf = input.value;
-    table.innerHTML = "";
-  
-    for (let i = 1; i <= 10; i++) {
-      table.innerHTML += `<tr">
-          <td">${tableOf}</td>
-          <td">X</td>
-          <td">${i}</td>
-          <td">= </td>
-          <td">${tableOf * i}</td>
-      </tr>`;
-    }
-    input.value = ""
-  });
+  for (let i = 1; i <= 10; i++) {
+
+    tbody.innerHTML += `<tr">
+        <td>${tableOf}</td>
+        <td>X</td>
+        <td>${i}</td>
+        <td>= </td>
+        <td>${tableOf * i}</td>
+    </tr>`;
+  }
+  document.getElementById(`inp`).innerHTML = "of " + input.value;
+});
