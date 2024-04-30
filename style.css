@@ -19,10 +19,46 @@ a {
 
 a:hover  {
     background-color: #008b41;
+    color: white;
 }
 
 h1, h3 {
     padding: 4px;
+}
+
+form {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+input {
+    border: 3px solid #008b41;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #008b41;
+    padding: 5px;
+    margin: 10px;
+}
+
+::placeholder{
+    color: #008b41;
+}
+
+#submit {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    background-color: #5fe99f;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #008b41;
+    color: white;
 }
 
 table {
