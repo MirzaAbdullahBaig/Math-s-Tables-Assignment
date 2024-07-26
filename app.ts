@@ -20,6 +20,6 @@ inputform.addEventListener("submit", (event) => {
     <td>${tableOf * i}</td> 
     </tr>`;
   }
-  document.getElementById(`inp`)!.innerHTML = "of " + input.value;
+  document.getElementById(`inp`)!.innerHTML = "Here is the table of " + input.value;
   input.value = "";
 });

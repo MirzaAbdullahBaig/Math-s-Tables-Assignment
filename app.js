@@ -9,6 +9,6 @@ inputform.addEventListener("submit", function (event) {
     for (var i = 1; i <= 10; i++) {
         table.innerHTML += "<tr\">\n    <td>".concat(tableOf, "</td>\n    <td>X</td>\n    <td>").concat(i, "</td>\n    <td>= </td>\n    <td>").concat(tableOf * i, "</td> \n    </tr>");
     }
-    document.getElementById("inp").innerHTML = "of " + input.value;
+    document.getElementById("inp").innerHTML = "Here is the table of " + input.value;
     input.value = "";
 });
