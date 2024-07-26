@@ -21,4 +21,5 @@ inputform.addEventListener("submit", (event) => {
     </tr>`;
   }
   document.getElementById(`inp`)!.innerHTML = "of " + input.value;
+  input.value = "";
 });
